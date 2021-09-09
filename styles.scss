@@ -1,0 +1,25 @@
+
+
+.container{
+    height: 100vh;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
+
+    .title{
+        font-size: 4rem;
+        color: rgba(255,255,255,0.8);
+        //text-transform: uppercase;
+        transform: translateX(0);
+        opacity: 0;
+        transition: transform 0.6s ease-in, opacity 0.6s linear;
+    }
+}
+
+
+.title.is-visible{
+    transform: translateX(80px);
+    opacity: 1;
+    
+    
+}
